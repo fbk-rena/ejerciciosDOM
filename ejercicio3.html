@@ -9,22 +9,33 @@
 	<form id="frm1">
 		Nombre: <input type="text" name="name" id="name"><br>
 		Mail: <input type="text" name="email" id="email"><br>
+		Ciudad: 
+		<select id="ciudades">
+  			<option value="CDMX">CDMX</option>
+ 			<option value="GDL">GDL</option>
+  			<option value="MTY">MTY</option>
+  			<option value="VER">VER</option>
+		</select>
 	</form> 
 	<button onclick="myFunction()">Mostrar</button>
 
 	<p id="mostrarNombre"></p>
 	<p id="mostrarMail"></p>
+	<p id="mostrarCiudad"></p>
 
 	<script>
 		function myFunction() {
 			var nombre = document.getElementById("name").value;
  			var correo = document.getElementById("email").value;
- 
+			var ciudad = document.getElementById("ciudades").value;
+
  			var datoNombre = document.getElementById("mostrarNombre");
  			var datoCorreo = document.getElementById("mostrarMail");
- 
+			var datoCiudad = document.getElementById("mostrarCiudad");
+
  			datoNombre.innerHTML = "El nombre ingresado es: "+ nombre;
      		datoCorreo.innerHTML = "El correo electrónico ingresado es: " + correo;
+			datoCiudad.innerHTML = "La ciudad desde que nos visita es "+ ciudad;
 		}
 	</script>
 </body>
