@@ -13,13 +13,13 @@
 	<p>Podemos usar <a name="enlace4">enlaces</a> para crear botones también.</p>
 
 	<p>Muestra aquí cuántos enlaces hay en este sitio:</p>
-	<span id="num_enlaces"></span>
+	<span id="num_enlaces" style="color:darkorchid ; font-size: 250%; font-family: verdana; font-weight:bold"></span>
 	
 	<script>
 		//Escribe aquí tu código Javascript
 		var enlaces = document.getElementsByTagName("A").length;
 		var numeroEnlaces = document.getElementById("num_enlaces");
-		numeroEnlaces.innerHTML = enlaces;
+		numeroEnlaces.innerHTML = "Son" + enlaces + "enlaces en este sitio";
 	</script>
 </body>
 </html>
